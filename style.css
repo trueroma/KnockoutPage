@@ -268,7 +268,6 @@ body {
 
 .leaderboard {
     width: 980px;
-    background-color: #4B0A1C;
     border-radius: 12px;
 }
 
@@ -320,15 +319,10 @@ body {
     padding: 0 10px;
 }
 
-.divider {
-    width: 1px;
-    height: 30px;
-    background-color: #8D5852;
-}
-
 .table-body {
     display: flex;
     flex-direction: column;
+    position: absolute;
 }
 
 .table-row {
@@ -336,6 +330,9 @@ body {
     display: flex;
     align-items: center;
     border-bottom: 1px dashed #8D5852;
+    background-color: #4B0A1C;
+    position: absolute;
+    transition: top 0.75s;
 }
 .table-row-piece {
     display: flex;
@@ -344,6 +341,9 @@ body {
     border-right: 1px solid #C9617D;
     height: 30px;
     font-size: 20px;
+}
+[id="7"] {
+    background-color: #06410f;
 }
 
 .place-number {
