@@ -125,8 +125,6 @@ const updateOrder = changeData => {
     player.querySelector('.prize').innerText = new Intl.NumberFormat('ru-RU').format(localPrizes[player.id - 1]);
 }
 
-addBets(localTopBets, localPrizes);
-
 const currentUrl = new URL(window.location.href);
 let socketUrl = currentUrl.href.replace("http", "ws");
 socketUrl = socketUrl.replace("/ladder/", "/ws/");
