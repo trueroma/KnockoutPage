@@ -147,8 +147,8 @@ socket.onmessage = event => {
     console.log(data);
     if (data.name % data.prizes) {
         address.innerText = data.name;
-        localPrizes = data.prizes
-        addBets(data.rating, prizes);
+        localPrizes = data.prizes;
+        addBets(data.rating, localPrizes);
     }
     if (data.period) updateTime(data.period);
     if (data.add) {
