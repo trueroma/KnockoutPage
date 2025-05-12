@@ -145,7 +145,7 @@ socket.onopen = connection => {
 socket.onmessage = event => {
     let data = JSON.parse(event.data);
     console.log(data);
-    if (data.name % data.prizes) {
+    if (data.name) {
         address.innerText = data.name;
         localPrizes = data.prizes;
         addBets(data.rating, localPrizes);
